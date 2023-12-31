@@ -1,0 +1,236 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*
+ Theme Name:   Birds
+ Description:  Birds and the Beets Child Theme
+ Template:     boilerplate
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'birdsppunderlined';
+  src: url("fonts/birdsppunderlined.eot");
+  src: url("fonts/birdsppunderlined.eot") format("embedded-opentype"), url("fonts/birdsppunderlined.woff2") format("woff2"), url("fonts/birdsppunderlined.woff") format("woff"), url("fonts/birdsppunderlined.ttf") format("truetype"), url("fonts/birdsppunderlined.svg#birdsppunderlined") format("svg"); }
+@font-face {
+  font-family: 'birdsppregular';
+  src: url("fonts/birdsppregular.eot");
+  src: url("fonts/birdsppregular.eot") format("embedded-opentype"), url("fonts/birdsppregular.woff2") format("woff2"), url("fonts/birdsppregular.woff") format("woff"), url("fonts/birdsppregular.ttf") format("truetype"), url("fonts/birdsppregular.svg#birdsppregular") format("svg"); }
+h1, h2, h3, h4, h5, h6 {
+  color: #181818;
+  font-family: "BirdsPP", "Impact", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  color: black; }
+.corporate-catering {
+  font-size: 36px; }
+.corporate-catering:hover, .corporate-catering:active {
+  font-family: 'birdsppunderlined'; }	
+
+h1 {
+  font-size: 36px; }
+
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+body {
+  font-family: 'birdsppregular';
+  color: black;
+  text-transform: uppercase;
+  background: #d8afe2;
+  background: -moz-linear-gradient(top, #d8afe2 0%, #a4d3e9 33%, #c3f2e4 66%, #fbefba 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d8afe2), color-stop(33%, #a4d3e9), color-stop(66%, #c3f2e4), color-stop(100%, #fbefba));
+  background: -webkit-linear-gradient(top, #d8afe2 0%, #a4d3e9 33%, #c3f2e4 66%, #fbefba 100%);
+  background: -o-linear-gradient(top, #d8afe2 0%, #a4d3e9 33%, #c3f2e4 66%, #fbefba 100%);
+  background: -ms-linear-gradient(top, #d8afe2 0%, #a4d3e9 33%, #c3f2e4 66%, #fbefba 100%);
+  background: linear-gradient(to bottom, #d8afe2 0%, #a4d3e9 33%, #c3f2e4 66%, #fbefba 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8afe2', endColorstr='#fbefba', GradientType=0 ); }
+
+#bg-wrap {
+  background-image: url(images/mask.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 1; }
+
+article {
+  position: relative;
+  z-index: 99; }
+
+#access {
+  display: none; }
+
+header {
+  position: relative;
+  z-index: 999;
+  height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+  header #logo {
+    -webkit-box-flex: 6;
+    -moz-box-flex: 6;
+    -webkit-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto; }
+    header #logo img {
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
+      width: 80vw; }
+  header p {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 36px; }
+
+footer {
+  position: relative;
+  z-index: 999;
+  border-top: 1px solid black;
+  padding: 50px 0 50px 0;
+  width: 65%;
+  margin: 50px auto 100px auto; }
+  footer p {
+    font-size: 24px; }
+  footer img {
+    margin-top: 30px; }
+
+.page-template-page-home {
+  margin: 0 auto;
+  text-align: center; }
+  .page-template-page-home .entry-content p {
+    font-size: 36px;
+    margin: 0 auto 150px auto;
+    padding: 50px 0 50px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 65%; }
+  .page-template-page-home .no-line {
+    font-family: 'birdsppregular'; }
+  .page-template-page-home .menu-head {
+    text-align: center;
+    font-family: 'birdsppunderlined';
+    font-size: 36px;
+    margin-top: 20px; }
+  .page-template-page-home .the-menu div table {
+    margin: 0 auto;
+    text-align: center; }
+  .page-template-page-home table {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 36px;
+    width: 70%;
+    border-collapse: separate;
+    border-spacing: 1em; }
+    .page-template-page-home table td {
+      vertical-align: top;
+      padding: 0; }
+    .page-template-page-home table .item .prod {
+      font-size: 18px; }
+    .page-template-page-home table .cost {
+      width: 30%;
+      text-align: right; }
